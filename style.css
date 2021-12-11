@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(232, 236, 255);
+    overflow-x: hidden;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: darkcyan;
+}
+
+.navbar img {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+.navbar-element {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.navbar-active {
+    font-weight: 700;
+  }
+
+.hero {
+    margin: 6% 15% 0 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .text {
+    float: left;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.hero h2, .hero p, .hero a {
+    margin: 5px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+button {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+button:hover {
+    border: 1px solid rgb(79, 133, 134);
+    background-color: rgb(79, 133, 134);
+}
+
+button:focus {
+    border: 1px solid rgb(63, 106, 107);
+    background-color: rgb(63, 106, 107);
+}
+
+.hero img {
+    float: right;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        margin: 10%;
+    }
+    .hero img {
+        width: 85vw;
+        float: left;
+        margin-top: 30px;
+    }
+
+    .hero p {
+        margin: 30px 0;
+    }
+}
+
+.covid {
+    background-color: black;
+    color: white;
+    margin: 5% 0;
+    padding: 30px;
+}
+
+.covid p {
+    font-size: 18px;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.locations {
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.location img, .location {
+    width: 350px;
+}
+
+.location {
+    margin: 0px 30px;
+}
+
+.explore{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.contact {
+    margin-top: 50px;
+    background-color: rgb(80, 80, 80);
+    padding: 60px 15%;
+    height: 60vh;
+}
+
+.contact form {
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30vw;
+}
+
+.contact form input {
+    margin-bottom: 30px;
+}
+
+[type="submit"] {
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+[type="submit"]:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+.contact-links {
+    float: right;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.contact-links a {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact form {
+        float: none;
+    }
+    .contact-links {
+        float: none;
+    }
+    .contact {
+        height: 90vh;
+    }
+}
+
+.facilities-hero {
+    text-align: center;
+    margin: 10% 30%;
+}
+
+.facilities-hero button {
+    margin-top: 30px;
+}
+
+.recreational p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 50px;
+}
+
+.join {
+    margin: 10% 100px;
+}
+
+.join p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .join {
+        margin: 10% 30px;
+    }
+    .destinations p {
+        margin: 0px 0px 50px 0px;
+    }
+}
+
+.destinations p{
+    margin: 0px 100px 50px 100px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .destinations p {
+        margin: 0px 20px 50px 20px;
+    }
+    .map {
+        width: 80%;
+    }
+}
+
+
+.directors {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.directors img {
+    margin: 10px 30px;
+}
+
+.info {
+    text-align: center;
+    margin: 8% 5%;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(29, 29, 29);
+    overflow: hidden;
+    text-align: center;
+    padding: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
